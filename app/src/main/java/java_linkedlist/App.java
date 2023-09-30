@@ -3,12 +3,20 @@
  */
 package java_linkedlist;
 
+import java_linkedlist.LinkedList.List;
+
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        List<Integer> list = new List<>();
+
+        list.add(2);
+        list.add(3);
+        list.add(0);
+        list.add(1);
+        list.add(4);
+        list.add(5);
+
+        System.out.println(list);
     }
 }
